@@ -1,0 +1,41 @@
+title 0.4: new note
+
+note over browser: 
+User writes (to be listed) sentence into the textbox named note and click submit button valued Save 
+and the form is sent with form action called new_note and with method POST
+end note
+
+browser -> server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+server -> browser: HTTP GET request
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+server -> browser: HTML-code
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server -> browser: main.css
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+server -> browser: main.js
+
+note over server:
+data.json file sent by the server as the body of the POST-request now includes a new user made note, 
+due to which code in main.js can add that to the notes list.
+That JSON data is requested by the JavaScript code during its execution.
+When this process is ready, event handler renders notes to screen.
+end note
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+server -> browser: data.json
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+
+note over server:
+address bar icon; favicon
+end note
+
+server -> browser: favicon.ico
