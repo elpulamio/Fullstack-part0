@@ -1,0 +1,34 @@
+title 0.5: single page app
+
+note over browser: 
+User writes (to be listed) sentence into the textbox named note and click submit button valued Save 
+and the form is sent with form action called new_note and with method POST
+end note
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+
+server -> browser: HTML-code
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server -> browser: main.css
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+server -> browser: spa.js
+
+note over browser:
+Next the spa.js fetches and parses data.json
+end note
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+server -> browser: data.json
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+
+note over server:
+address bar icon; favicon
+end note
+
+server -> browser: favicon.ico
