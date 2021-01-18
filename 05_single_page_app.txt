@@ -1,10 +1,5 @@
 title 0.5: single page app
 
-note over browser: 
-User writes (to be listed) sentence into the textbox named note and click submit button valued Save 
-and the form is sent with method POST
-end note
-
 browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
 
 server -> browser: HTML-code

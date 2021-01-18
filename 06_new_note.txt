@@ -1,10 +1,16 @@
 title 0.6: new note
 
+note over browser: 
+User writes (to be listed) sentence into the textbox named note and click submit button valued Save 
+and the form is sent with method POST. There is no need for declaration action in the form because
+everything needed is already loaded into browser
+end note
+
 browser -> server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 
 server -> browser: "Permission to operate" (request was successful, status code 201)
 
 note over browser 
 Everything needed is already loaded to browser (local machine) and now when new note is made 
-browser asks from server is this ok and if it is server gives permission to operate.
+browser asks from server is this ok and if it is server gives permission to operate
 end note
