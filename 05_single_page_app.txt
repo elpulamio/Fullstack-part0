@@ -2,7 +2,7 @@ title 0.5: single page app
 
 note over browser: 
 User writes (to be listed) sentence into the textbox named note and click submit button valued Save 
-and the form is sent with form action called new_note and with method POST
+and the form is sent with method POST
 end note
 
 browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
@@ -17,10 +17,6 @@ browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
 
 server -> browser: spa.js
 
-note over browser:
-Next the spa.js fetches and parses data.json
-end note
-
 browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 
 server -> browser: data.json
@@ -32,3 +28,8 @@ address bar icon; favicon
 end note
 
 server -> browser: favicon.ico
+
+note over browser:
+Everything is loaded in the browser and then the browser constructs data 
+with instructs from the server
+end note
