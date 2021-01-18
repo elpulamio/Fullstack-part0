@@ -1,0 +1,10 @@
+title 0.6: new note
+
+browser -> server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+server -> browser: "Permission to operate" (request was successful, status code 201)
+
+note over browser 
+Everything needed is already loaded to browser (local machine) and now when new note is made 
+browser asks from server is this ok and if it is server gives permission to operate.
+end note
